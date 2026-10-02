@@ -32,7 +32,7 @@ try:
     sign_in_btn.click()
     time.sleep(10)
 
-    data = pd.read_excel(r"C:\Users\omars\OneDrive\Desktop\files\linkedin_companies A_F.xlsx",dtype = str) #input path
+    data = pd.read_excel(r"",dtype = str) #path for companies names excel file
     if len(data.columns) == 2:
         data['logo'] = np.nan
         data['about_us'] = np.nan
@@ -84,6 +84,6 @@ except KeyboardInterrupt:
     print('The script is stopping now.')
     driver.quit()
 finally:
-    data.to_excel(r"C:\Users\omars\OneDrive\Desktop\files\linkedin_companies.xlsx",index=False) #output path
+    data.to_excel(r"",index=False) #output file path
     print('script stopped')
 
