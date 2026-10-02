@@ -93,7 +93,7 @@ if __name__ == '__main__':
     flag = True
     now = time.time()
     try:
-        data = pd.read_excel(r"C:\Users\omars\OneDrive\Desktop\files\linkedin_companies A_F.xlsx") #input path
+        data = pd.read_excel(r"") #path for comapnies names excel file
         data = data.drop_duplicates(subset = 'company_url')
         if len(data.columns) == 2:
             data['logo'] = np.nan
@@ -134,6 +134,6 @@ if __name__ == '__main__':
         final_null_rows = list(data.loc[final_nulls,'company_url'].values)
         flag = True
         scraper(final_null_rows)
-        data.to_excel(r"C:\Users\omars\OneDrive\Desktop\files\linkedin_companies1.xlsx",index=False) #output path
+        data.to_excel(r"",index=False) #path for output file
         
     
