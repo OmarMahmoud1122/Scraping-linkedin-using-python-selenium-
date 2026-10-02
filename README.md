@@ -1,4 +1,5 @@
 **to scrape companies names:**
+
   run: _linkedin_comapnies_scraper.py_ to generate excel file with companies' names and links.
   this file will be used in the other 2 scrappers to scrape companies details.
 
